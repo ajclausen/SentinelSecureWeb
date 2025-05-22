@@ -1,0 +1,300 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="About Us" 
+  description="Learn about SentinelSecure's mission to protect local businesses from cyber threats. Meet our expert team and discover why we're the trusted cybersecurity MSP in your community."
+  keywords="about SentinelSecure, cybersecurity experts, local MSP, IT security team, business protection"
+>
+  <Header />
+  
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-purple-50 via-white to-pink-50 section-padding">
+      <div class="container-max">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Protecting <span class="gradient-text">Local Businesses</span> Since Day One
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+              At SentinelSecure, we're more than just an MSP – we're your local cybersecurity guardians. 
+              Founded with a mission to make enterprise-level security accessible to small and medium businesses, 
+              we've been keeping our community safe from cyber threats for over a decade.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="/contact" class="btn-primary text-center">Get to Know Us</a>
+              <a href="/services" class="btn-secondary text-center">Our Services</a>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="bg-gradient-to-br from-purple-100 to-pink-100 rounded-2xl p-8">
+              <img 
+                src="/SentinelSecure.svg" 
+                alt="SentinelSecure Team" 
+                class="w-full max-w-sm mx-auto drop-shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="bg-white section-padding">
+      <div class="container-max">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Our <span class="gradient-text">Mission</span>
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            To democratize cybersecurity by providing world-class protection that every business can afford, 
+            understand, and rely on. We believe security shouldn't be a luxury – it's a necessity.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Local Focus</h3>
+            <p class="text-gray-600">
+              We understand the unique challenges facing local businesses and provide personalized solutions 
+              that fit your specific needs and budget.
+            </p>
+          </div>
+          
+          <div class="text-center">
+            <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Rapid Response</h3>
+            <p class="text-gray-600">
+              When seconds count, our team is ready. We provide immediate response to security incidents 
+              and proactive monitoring to prevent attacks.
+            </p>
+          </div>
+          
+          <div class="text-center">
+            <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Expert Knowledge</h3>
+            <p class="text-gray-600">
+              Our team holds industry certifications and stays current with the latest threats 
+              and security technologies to keep you protected.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="bg-gray-50 section-padding">
+      <div class="container-max">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Meet Our <span class="gradient-text">Expert Team</span>
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Our cybersecurity professionals bring decades of combined experience protecting businesses 
+            from the most sophisticated cyber threats.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Team Member 1 -->
+          <div class="bg-white rounded-xl p-8 shadow-lg card-hover text-center">
+            <div class="w-24 h-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-6">
+              <span class="text-2xl font-bold text-white">MS</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Michael Smith</h3>
+            <p class="text-purple-600 font-medium mb-4">Chief Security Officer</p>
+            <p class="text-gray-600 mb-4">
+              15+ years in cybersecurity with expertise in threat detection and incident response. 
+              CISSP certified and former Fortune 500 security architect.
+            </p>
+            <div class="flex justify-center space-x-2">
+              <span class="px-3 py-1 bg-purple-100 text-purple-700 text-xs rounded-full">CISSP</span>
+              <span class="px-3 py-1 bg-purple-100 text-purple-700 text-xs rounded-full">CISM</span>
+            </div>
+          </div>
+          
+          <!-- Team Member 2 -->
+          <div class="bg-white rounded-xl p-8 shadow-lg card-hover text-center">
+            <div class="w-24 h-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-6">
+              <span class="text-2xl font-bold text-white">SJ</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Sarah Johnson</h3>
+            <p class="text-purple-600 font-medium mb-4">Lead Network Engineer</p>
+            <p class="text-gray-600 mb-4">
+              12+ years managing enterprise networks and infrastructure. Specializes in network security 
+              and compliance frameworks for regulated industries.
+            </p>
+            <div class="flex justify-center space-x-2">
+              <span class="px-3 py-1 bg-purple-100 text-purple-700 text-xs rounded-full">CCNA</span>
+              <span class="px-3 py-1 bg-purple-100 text-purple-700 text-xs rounded-full">Security+</span>
+            </div>
+          </div>
+          
+          <!-- Team Member 3 -->
+          <div class="bg-white rounded-xl p-8 shadow-lg card-hover text-center">
+            <div class="w-24 h-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-6">
+              <span class="text-2xl font-bold text-white">DW</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">David Wilson</h3>
+            <p class="text-purple-600 font-medium mb-4">Systems Administrator</p>
+            <p class="text-gray-600 mb-4">
+              10+ years in IT systems management and cloud security. Expert in backup solutions, 
+              disaster recovery, and business continuity planning.
+            </p>
+            <div class="flex justify-center space-x-2">
+              <span class="px-3 py-1 bg-purple-100 text-purple-700 text-xs rounded-full">MCSE</span>
+              <span class="px-3 py-1 bg-purple-100 text-purple-700 text-xs rounded-full">AWS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="bg-white section-padding">
+      <div class="container-max">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Our <span class="gradient-text">Core Values</span>
+          </h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div class="space-y-8">
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Transparency</h3>
+                <p class="text-gray-600">
+                  We believe in clear communication and honest recommendations. No hidden fees, 
+                  no unnecessary upsells – just straightforward cybersecurity solutions.
+                </p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Reliability</h3>
+                <p class="text-gray-600">
+                  When you need us, we're there. Our 24/7 monitoring and rapid response 
+                  ensure your business stays protected around the clock.
+                </p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Innovation</h3>
+                <p class="text-gray-600">
+                  We continuously invest in the latest security technologies and training 
+                  to stay ahead of emerging threats and protect our clients.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="space-y-8">
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Partnership</h3>
+                <p class="text-gray-600">
+                  We're not just a vendor – we're your trusted cybersecurity partner. 
+                  We take the time to understand your business and provide personalized solutions.
+                </p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Education</h3>
+                <p class="text-gray-600">
+                  We believe in empowering our clients with knowledge. Our team provides training 
+                  and guidance to help your staff become your first line of defense.
+                </p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Community</h3>
+                <p class="text-gray-600">
+                  As a local business ourselves, we're committed to supporting and protecting 
+                  our community's digital ecosystem and economic growth.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-gradient-to-r from-purple-600 to-pink-600 section-padding text-white">
+      <div class="container-max text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Ready to Partner with Us?
+        </h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+          Let's discuss how SentinelSecure can become your trusted cybersecurity partner. 
+          Schedule a consultation to learn more about our team and services.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact" class="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+            Schedule Consultation
+          </a>
+          <a href="/services" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition-colors">
+            Explore Services
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout> 

@@ -1,0 +1,342 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Contact Us" 
+  description="Get in touch with SentinelSecure for a free cybersecurity assessment. Contact our expert team for managed IT services, security monitoring, and business protection."
+  keywords="contact SentinelSecure, cybersecurity consultation, free security assessment, managed IT services contact, cyber security help"
+>
+  <Header />
+  
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-purple-50 via-white to-pink-50 section-padding">
+      <div class="container-max text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          Get Your <span class="gradient-text">Free Security Assessment</span>
+        </h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          Ready to protect your business from cyber threats? Contact our expert team today for a 
+          complimentary security assessment and discover how we can safeguard your digital assets.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+          <a href="tel:+1234567890" class="btn-primary text-center">
+            <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+            </svg>
+            Call: (123) 456-7890
+          </a>
+          <a href="mailto:info@sentinelsecure.com" class="btn-secondary text-center">
+            <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 7.89a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+            Email Us
+          </a>
+        </div>
+        <p class="text-sm text-gray-500">
+          <svg class="w-4 h-4 inline mr-1 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+          </svg>
+          24/7 Emergency Support Available
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Form & Info Section -->
+    <section class="bg-white section-padding">
+      <div class="container-max">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Contact Form -->
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+            <p class="text-gray-600 mb-8">
+              Fill out the form below and our team will get back to you within 24 hours. 
+              For urgent security issues, please call our emergency line.
+            </p>
+            
+            <form class="space-y-6" id="contact-form">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">
+                    First Name *
+                  </label>
+                  <input 
+                    type="text" 
+                    id="firstName" 
+                    name="firstName" 
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-colors"
+                    placeholder="John"
+                  />
+                </div>
+                <div>
+                  <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">
+                    Last Name *
+                  </label>
+                  <input 
+                    type="text" 
+                    id="lastName" 
+                    name="lastName" 
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-colors"
+                    placeholder="Doe"
+                  />
+                </div>
+              </div>
+              
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
+                  Email Address *
+                </label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-colors"
+                  placeholder="john@example.com"
+                />
+              </div>
+              
+              <div>
+                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">
+                  Phone Number
+                </label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-colors"
+                  placeholder="(123) 456-7890"
+                />
+              </div>
+              
+              <div>
+                <label for="company" class="block text-sm font-medium text-gray-700 mb-2">
+                  Company Name
+                </label>
+                <input 
+                  type="text" 
+                  id="company" 
+                  name="company"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-colors"
+                  placeholder="Your Company"
+                />
+              </div>
+              
+              <div>
+                <label for="service" class="block text-sm font-medium text-gray-700 mb-2">
+                  Service Interest
+                </label>
+                <select 
+                  id="service" 
+                  name="service"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-colors"
+                >
+                  <option value="">Select a service</option>
+                  <option value="security-assessment">Free Security Assessment</option>
+                  <option value="threat-protection">Advanced Threat Protection</option>
+                  <option value="monitoring">24/7 Security Monitoring</option>
+                  <option value="managed-it">Managed IT Services</option>
+                  <option value="backup">Data Backup & Recovery</option>
+                  <option value="compliance">Compliance Management</option>
+                  <option value="training">Security Training</option>
+                  <option value="emergency">Emergency Support</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">
+                  Message *
+                </label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  rows="5" 
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-colors resize-none"
+                  placeholder="Tell us about your cybersecurity needs or any specific concerns you have..."
+                ></textarea>
+              </div>
+              
+              <div class="flex items-start space-x-3">
+                <input 
+                  type="checkbox" 
+                  id="consent" 
+                  name="consent" 
+                  required
+                  class="mt-1 h-4 w-4 text-purple-600 focus:ring-purple-500 border-gray-300 rounded"
+                />
+                <label for="consent" class="text-sm text-gray-600">
+                  I agree to receive communications from SentinelSecure regarding my inquiry and understand 
+                  that I can unsubscribe at any time. *
+                </label>
+              </div>
+              
+              <button 
+                type="submit" 
+                class="w-full btn-primary text-center"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+          
+          <!-- Contact Information -->
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Get in Touch</h2>
+            <p class="text-gray-600 mb-8">
+              We're here to help protect your business. Reach out to us through any of the following methods.
+            </p>
+            
+            <div class="space-y-6 mb-8">
+              <!-- Phone -->
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-2">Phone Support</h3>
+                  <p class="text-gray-600 mb-1">Main: <a href="tel:+1234567890" class="text-purple-600 hover:text-purple-700">(123) 456-7890</a></p>
+                  <p class="text-gray-600">Emergency: <a href="tel:+1234567891" class="text-red-600 hover:text-red-700">(123) 456-7891</a></p>
+                  <p class="text-sm text-gray-500 mt-2">Available 24/7 for emergencies</p>
+                </div>
+              </div>
+              
+              <!-- Email -->
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 7.89a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-2">Email</h3>
+                  <p class="text-gray-600 mb-1">General: <a href="mailto:info@sentinelsecure.com" class="text-purple-600 hover:text-purple-700">info@sentinelsecure.com</a></p>
+                  <p class="text-gray-600">Support: <a href="mailto:support@sentinelsecure.com" class="text-purple-600 hover:text-purple-700">support@sentinelsecure.com</a></p>
+                  <p class="text-sm text-gray-500 mt-2">We respond within 24 hours</p>
+                </div>
+              </div>
+              
+              <!-- Address -->
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-2">Office Location</h3>
+                  <p class="text-gray-600">123 Business Center Drive<br />Suite 200<br />Your City, ST 12345</p>
+                  <p class="text-sm text-gray-500 mt-2">By appointment only</p>
+                </div>
+              </div>
+              
+              <!-- Hours -->
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-2">Business Hours</h3>
+                  <p class="text-gray-600">Monday - Friday: 8:00 AM - 6:00 PM<br />Saturday: 9:00 AM - 2:00 PM<br />Sunday: Closed</p>
+                  <p class="text-sm text-gray-500 mt-2">Emergency support available 24/7</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Emergency Contact Box -->
+            <div class="bg-red-50 border border-red-200 rounded-lg p-6">
+              <div class="flex items-center space-x-3 mb-3">
+                <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                </svg>
+                <h3 class="text-lg font-semibold text-red-900">Security Emergency?</h3>
+              </div>
+              <p class="text-red-800 mb-4">
+                If you're experiencing an active cyber attack or security breach, 
+                call our emergency line immediately.
+              </p>
+              <a href="tel:+1234567891" class="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors inline-block">
+                Emergency: (123) 456-7891
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="bg-gray-50 section-padding">
+      <div class="container-max">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Frequently Asked <span class="gradient-text">Questions</span>
+          </h2>
+        </div>
+        
+        <div class="max-w-3xl mx-auto space-y-6">
+          <div class="bg-white rounded-lg p-6 shadow-sm">
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">How quickly can you respond to a security incident?</h3>
+            <p class="text-gray-600">We provide 24/7 monitoring and can respond to critical security incidents within 5 minutes. Our team is always ready to help protect your business.</p>
+          </div>
+          
+          <div class="bg-white rounded-lg p-6 shadow-sm">
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">What's included in the free security assessment?</h3>
+            <p class="text-gray-600">Our comprehensive assessment includes network vulnerability scanning, security policy review, compliance evaluation, and a detailed report with recommendations tailored to your business.</p>
+          </div>
+          
+          <div class="bg-white rounded-lg p-6 shadow-sm">
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">Do you work with small businesses?</h3>
+            <p class="text-gray-600">Absolutely! We specialize in providing enterprise-level security solutions that are affordable and scalable for small and medium-sized businesses.</p>
+          </div>
+          
+          <div class="bg-white rounded-lg p-6 shadow-sm">
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">How do you ensure our data stays private?</h3>
+            <p class="text-gray-600">We follow strict confidentiality protocols and industry best practices. All our staff are bound by confidentiality agreements, and we maintain comprehensive cyber insurance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+  
+  <script>
+    // Form submission handling
+    const contactForm = document.getElementById('contact-form') as HTMLFormElement;
+    contactForm?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(this);
+      const data = Object.fromEntries(formData);
+      
+      // Basic validation
+      if (!data.firstName || !data.lastName || !data.email || !data.message || !data.consent) {
+        alert('Please fill in all required fields and accept the consent checkbox.');
+        return;
+      }
+      
+      // Show success message (in a real implementation, you'd send this to your backend)
+      alert('Thank you for your message! We\'ll get back to you within 24 hours.');
+      this.reset();
+      
+      // In a real implementation, you would send the data to your backend:
+      // fetch('/api/contact', {
+      //   method: 'POST',
+      //   headers: { 'Content-Type': 'application/json' },
+      //   body: JSON.stringify(data)
+      // });
+    });
+  </script>
+</Layout> 
